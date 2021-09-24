@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using Bakery.Models;
+
+
 
 namespace Bakery.Tests
 {
@@ -16,8 +16,8 @@ namespace Bakery.Tests
 
      //Act
       Pastry newPastry = new Pastry(quantityOrdered, cost);
-     int resultQuantityOrdered = newPastry.QuantityOrdered;
-     double resultCost = newPastry.Cost;
+      int resultQuantityOrdered = newPastry.QuantityOrdered;
+      double resultCost = newPastry.Cost;
 
      //Assert
       Assert.AreEqual(resultQuantityOrdered, newPastry.QuantityOrdered);
