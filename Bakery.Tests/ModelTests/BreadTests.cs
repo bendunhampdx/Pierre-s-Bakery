@@ -23,5 +23,17 @@ namespace Bakery.Tests
       Assert.AreEqual(resultQuantityOrdered, newBread.QuantityOrdered);
       Assert.AreEqual(resultCost, newBread.Cost);
     }
+
+    [TestMethod]
+    public void SetBreadDiscount_CalculatesCostWithoutDiscounts_Double()
+    {
+      //Arrange
+      
+
+      //Act
+
+
+      //Assert
+    }
   }
 }
