@@ -1,6 +1,6 @@
-# Name of Project
+# Pierre's Bakery
 
-#### short description of the app
+#### This application is an order interface for a bakery that allows users to order bread or pastries. 
 
 #### Created By: Ben Dunham
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-Detailed description
+The Bakery order application allows users to order quantities of bread and pastries while accounting for a discount when the user orders more than two bread items and threee or more pastry items.
 
 ## Setup and Usage Instructions
 

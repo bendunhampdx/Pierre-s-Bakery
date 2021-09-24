@@ -53,6 +53,32 @@ namespace Bakery
     }
 
 
+    public void SecondOrderQuestion()
+    {
+      Console.WriteLine("Would you like to order any pastries? Type 'pastry' to add pastries to your order and 'no' if not");
+      
+      string bakeryChoice = Console.ReadLine().ToUpper();
+      
+      try
+      {
+        if (bakeryChoice == "PASTRY")
+        {
+          OrderPastry();
+        }
+        else if (bakeryChoice == "NO")
+        {
+          Checkout();
+        }
+        else
+        {
+          Console.WriteLine($"{error}");
+        }
+      }
+      catch
+      {
+        Console.WriteLine($"{error}");
+      }
+    }
 
     public void OrderBread()
     {
@@ -77,7 +103,28 @@ namespace Bakery
     SecondOrderQuestion();
     }
 
- 
+    public void OrderPastry()
+    {
+      Console.WriteLine("We're currently running a pastry special! Buy 1 pastry for $2 or 3 pastries for $5!");
+      Console.WriteLine("How many pastries would you like to purchase?");
+      
+      string pastryOrder = Console.ReadLine();
+      int quantityOrdered = 0;
+
+      try
+      {
+        quantityOrdered += int.Parse(pastryOrder);
+
+        pastry.Cost = pastry.SetPastryDiscount(quantityOrdered);
+        Console.WriteLine($"Your total cost for pastry is ${pastry.Cost}" );
+
+      }
+      catch
+      {
+        Console.WriteLine($"Unable to parse '{pastryOrder}'");
+      }
+    Checkout();
+    }
 
     public void Checkout()
     {
