@@ -1,8 +1,13 @@
 using System;
-using PierresBakery;
+using Bakery.Models;
 
-
-namespace Bakery
+namespace Bakery.Models
 {
+  class Program
+  {
+    public static void Main()
+    {
 
+    }
+  }
 }

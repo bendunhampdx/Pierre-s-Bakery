@@ -1,16 +1,27 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Bakery.Models;
 
 
-namespace PierresBakery.Tests
+namespace Bakery.Tests
 {
   [TestClass]
   public class BreadTests
   {
     [TestMethod]
-public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-{
-  // any necessary logic to prep for test; instantiating new classes, etc.
-  Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-}
+    public void SetProperties_BreadConstructorSetsPropertiesAccurately_IntDouble()
+    {
+     //Arrange
+     int quantityOrdered = 5;
+     double cost = 20;
+
+     //Act
+     Bread newBread = new Bread(quantityOrdered, totalCost);
+     int resultQuantityOrdered = newBread.QuantityOrdered;
+     double resultCost = newBread.Cost;
+
+     //Assert
+      Assert.AreEqual(resultQuantityOrdered, newBread.QuantityOrdered);
+      Assert.AreEqual(resultTotalCost, newBread.TotalCost);
+    }
   }
 }

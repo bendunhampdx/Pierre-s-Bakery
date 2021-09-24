@@ -1,10 +1,17 @@
 using System;
 
 
-namespace PierresBakery
+namespace Bakery.Models
 {
   public class Bread
   {
-    // properties, constructors, methods, etc. go here
+    public int QuantityOrdered { get; set;}
+    public double Cost { get; set;}
+
+    public Bread(int quantityOrdered, double cost)
+    {
+      QuantityOrdered = quantityOrdered;
+      Cost = cost;
+    }
   }
 }

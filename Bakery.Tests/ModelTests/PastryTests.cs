@@ -1,16 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using Bakery.Models;
 
-
-namespace PierresBakery.Tests
+namespace Bakery.Tests
 {
-  [TestClass]
-  public class PastryTests
-  {
-    [TestMethod]
-public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-{
-  // any necessary logic to prep for test; instantiating new classes, etc.
-  Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-}
+  // [TestClass]
+  // public class PastryTests
+  // {
+  //   [TestMethod]
+  //   public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+  //   {
+  //     // any necessary logic to prep for test; instantiating new classes, etc.
+  //     Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+  //   }
   }
-}
