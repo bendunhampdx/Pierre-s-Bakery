@@ -27,13 +27,18 @@ namespace Bakery.Tests
     [TestMethod]
     public void SetBreadDiscount_CalculatesCostWithoutDiscounts_Double()
     {
-      //Arrange
-      
+     //Arrange
+     int quantityOrdered = 2;
+     double cost = 10;
 
-      //Act
+     //Act
+     Bread newBread = new Bread(quantityOrdered, cost);
+     int resultQuantityOrdered = newBread.QuantityOrdered;
+     double resultCost = newBread.Cost;
 
-
-      //Assert
+     //Assert
+      Assert.AreEqual(resultQuantityOrdered, newBread.QuantityOrdered);
+      Assert.AreEqual(resultCost, 10);
     }
   }
 }
