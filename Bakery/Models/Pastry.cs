@@ -4,6 +4,13 @@ namespace Bakery.models
 {
   public class Pastry
   {
-    // properties, constructors, methods, etc. go here
+    public int QuantityOrdered { get; set;}
+    public double Cost { get; set;}
+
+    public Pastry(int quantityOrdered, double cost)
+    {
+      QuantityOrdered = quantityOrdered;
+      Cost = cost;
+    }
   }
 }
