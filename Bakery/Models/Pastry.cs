@@ -12,5 +12,22 @@ namespace Bakery
       QuantityOrdered = quantityOrdered;
       Cost = cost;
     }
+
+    public double SetPastryDiscount(int quantityOrdered)
+    {
+      double convertedQuantityOrdered = Convert.ToDouble(quantityOrdered);
+      // double freePastry = Math.Floor(convertedQuantityOrdered/3);
+      double individualCost = 2;
+
+      if (convertedQuantityOrdered < 3)
+      {
+        double cost = (individualCost * convertedQuantityOrdered);
+        return cost;
+      }
+      else 
+      {
+        return Cost;
+      }
+    }
   }
 }

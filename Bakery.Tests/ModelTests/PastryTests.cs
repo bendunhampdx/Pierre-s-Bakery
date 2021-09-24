@@ -23,5 +23,22 @@ namespace Bakery.Tests
       Assert.AreEqual(resultQuantityOrdered, newPastry.QuantityOrdered);
       Assert.AreEqual(resultCost, newPastry.Cost);
     }
+
+        [TestMethod]
+    public void SetPastryDiscount_PastryDiscountAccountedFor_Double()
+    {
+    //Arrange
+    int quantityOrdered = 1;
+    double cost = 2;
+
+    //Act
+      Pastry newPastry = new Pastry(quantityOrdered, cost);
+      int resultQuantityOrdered = newPastry.QuantityOrdered;
+      double resultCost = newPastry.Cost;
+
+    //Assert
+      Assert.AreEqual(resultQuantityOrdered, newPastry.QuantityOrdered);
+      Assert.AreEqual(resultCost, 2);
+    }
   }
 }
