@@ -40,5 +40,26 @@ namespace Bakery.Tests
       Assert.AreEqual(resultQuantityOrdered, newBread.QuantityOrdered);
       Assert.AreEqual(resultCost, 10);
     }
+
+    [TestMethod]
+
+    public void SetBreadDiscount_CalculatesCostWithDiscounts_Double()
+    {
+      //Arrange
+     int quantityOrdered = 6;
+     double cost = 20;
+
+     //Act
+     Bread newBread = new Bread(quantityOrdered, cost);
+     int resultQuantityOrdered = newBread.QuantityOrdered;
+     double resultCost = newBread.Cost;
+
+     //Assert
+      Assert.AreEqual(resultQuantityOrdered, newBread.QuantityOrdered);
+      Assert.AreEqual(resultCost, 20);
+    }
+
+
+
   }
 }
