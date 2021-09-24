@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using Bakery.Models;
 
 
@@ -15,13 +16,13 @@ namespace Bakery.Tests
      double cost = 20;
 
      //Act
-     Bread newBread = new Bread(quantityOrdered, totalCost);
+     Bread newBread = new Bread(quantityOrdered, cost);
      int resultQuantityOrdered = newBread.QuantityOrdered;
      double resultCost = newBread.Cost;
 
      //Assert
       Assert.AreEqual(resultQuantityOrdered, newBread.QuantityOrdered);
-      Assert.AreEqual(resultTotalCost, newBread.TotalCost);
+      Assert.AreEqual(resultCost, newBread.Cost);
     }
   }
 }
